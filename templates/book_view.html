@@ -1,0 +1,83 @@
+{% extends "/shared/admin_layout.html" %}
+{% block title  %}Book {{books['name']}}{% endblock %}
+
+{% block content  %}
+    <div class="container">
+        <div class="col-md-12 mt-3 mb-2">
+            <div class="search-form-container">
+                {% if msg %}
+                    <div class="alert alert-success">{{ msg }}</div>
+                {% endif %}
+                <form action="/books/search" method="GET" class="search-form">
+                    <div class="form-group">
+                        <div class="input-container">
+                            <input 
+                                type="search" 
+                                class="form-control" 
+                                placeholder="Search for books..." 
+                                autocomplete="on" 
+                                autofocus 
+                                aria-describedby="emailHelp" 
+                                value="{{ keyword }}" />
+                        </div>
+                        <button type="submit" class="btn btn-primary">Search</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        {% if books  %}
+        <div class="row">
+            <div class="col-md-12">
+                <div class="card book">
+                    <div class="card-body">
+                        <div class="col-md-6">
+                            <img src"../../static/img/bg.jpg" alt="{{books[1]}}">
+                            <a href="/books/add/{{book['id']}}" class="btn btn-outline-warning ml-3 mt-3 {{ disabled if str(books['id'] in user_books else '')}}">
+                                <i class="bi bi-journal-plus"></i> {{ 'Added' if str(books['id']) in user_books else 'Add'}}
+                            </a>
+                            <div class="platforms mt-3 ml-3">
+                                <h4 class="font-weight-light" class="platform-title">Available on:</h4>
+                                <div class="platforms mt-3 ml-3">
+                                    <i class="bi bi-xbox"></i>
+                                    <i class="bi bi-youtube ml-2"></i>
+                                    <i class="bi bi-windows ml-2"></i>
+                                    <i class="bi bi-github ml-2"></i>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6">
+                            <h2>{{ books['name'] }}</h2>
+
+                            {% if books['availibility'] < 1 %}
+                                <span class="badge badge-warning">Assigned</span>
+                            {% endif %}
+                            <p class="card-text">{{ books['desc'] }}</p>
+                            <p class="card-text font-weight-light"><strong>Author: </strong> {{ books['author'] }}</p>
+                            <p class="card-text">
+                                <span class="badge badge-{{ 'primary' if books['count'] > 0 else 'secondary'}}">
+                                    {% if books['count'] > 0 %}
+                                        Books left: {{ books['count'] }}
+                                    {% else %}
+                                        All gone
+                                    {% endif %}
+                                </span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        {% else %}
+        <div class="car bwraper">
+            <div class="card-body">
+                <div class="text-center mb-4">
+                    <i class="bi bi-book mt-4"></i>
+                </div>
+                <p class="text-center mb-4">No books found.</p>
+            </div>
+        </div>  
+        {% endif %}
+    </div>
+{% endblock %}
