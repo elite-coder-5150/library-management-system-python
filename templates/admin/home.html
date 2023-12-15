@@ -1,0 +1,25 @@
+{% extends "/shared/admin_layout.html" %}
+{% block title %}Admin Home {% endblock %}
+
+{% block head %}
+{{ super() }}
+    <link rel="stylesheet" href="../../static/home.css">
+{% endblock%}
+
+{% block content %}
+
+{% endblock %}
+    <div class="container d-flex h-75">
+        <div class="row justify-content-center align-self-center welcome">
+            <h1>Welcome</h1>
+            <form action="/books/search" method="GET" class="search-form">
+                <div class="form-group">
+                    <div class="input-container">
+                        <input type="search" class="form-control" placeholder="Search for books..." autocomplete="on" autofocus aria-describedby="emailHelp" value="{{ keyword }}" />
+                    </div>
+                    <button type="submit" class="btn btn-primary">Search</button>
+                </div>
+            </form>
+        </div>
+    </div>
+{% endblock %}

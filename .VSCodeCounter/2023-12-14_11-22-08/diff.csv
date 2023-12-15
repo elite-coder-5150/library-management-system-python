@@ -1,0 +1,9 @@
+"filename", "language", "Python", "HTML", "SCSS", "comment", "blank", "total"
+"/Users/darrellparkhouse/projects/python/library-management-system-python/templates/admin/books/add.html", "HTML", 0, 48, 0, 0, 4, 52
+"/Users/darrellparkhouse/projects/python/library-management-system-python/templates/admin/books/book_view.html", "HTML", 0, 58, 0, 0, 8, 66
+"/Users/darrellparkhouse/projects/python/library-management-system-python/templates/admin/home.html", "HTML", 0, 0, 0, 0, 1, 1
+"/Users/darrellparkhouse/projects/python/library-management-system-python/templates/scss/app.scss", "SCSS", 0, 0, 44, 0, 10, 54
+"/Users/darrellparkhouse/projects/python/library-management-system-python/templates/shared/admin_layout.html", "HTML", 0, 51, 0, 2, 6, 59
+"/Users/darrellparkhouse/projects/python/library-management-system-python/templates/shared/layout.html", "HTML", 0, 45, 0, 2, 6, 53
+"/Users/darrellparkhouse/projects/python/library-management-system-python/util/scss_compile_notification.py", "Python", 35, 0, 0, 0, 12, 47
+"Total", "-", 35, 202, 44, 4, 47, 332
