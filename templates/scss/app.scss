@@ -92,6 +92,12 @@ label { display: block; }
     margin-top: 32px;
 }
 
+.small-form-text {
+    display: block;
+    font-size:  15px;
+    width: 90%;
+}
+
 h2 {
     display: inline-block;
 }
@@ -102,4 +108,8 @@ h2 {
     h1 {
         font-size: 3.5em;
     }
+}
+
+.manage-user-form {
+    display: inline;
 }
