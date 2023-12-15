@@ -1,0 +1,35 @@
+"filename", "language", "Python", "HTML", "SCSS", "CSS", "pip requirements", "SQL", "comment", "blank", "total"
+"/Users/darrellparkhouse/projects/python/library-management-system-python/app/actor.py", "Python", 36, 0, 0, 0, 0, 0, 0, 13, 49
+"/Users/darrellparkhouse/projects/python/library-management-system-python/app/admin.py", "Python", 7, 0, 0, 0, 0, 0, 0, 2, 9
+"/Users/darrellparkhouse/projects/python/library-management-system-python/app/books.py", "Python", 9, 0, 0, 0, 0, 0, 0, 1, 10
+"/Users/darrellparkhouse/projects/python/library-management-system-python/app/user.py", "Python", 9, 0, 0, 0, 0, 0, 0, 2, 11
+"/Users/darrellparkhouse/projects/python/library-management-system-python/controllers/admin_manager.py", "Python", 24, 0, 0, 0, 0, 0, 0, 10, 34
+"/Users/darrellparkhouse/projects/python/library-management-system-python/controllers/book_manager.py", "Python", 30, 0, 0, 0, 0, 0, 0, 11, 41
+"/Users/darrellparkhouse/projects/python/library-management-system-python/controllers/user_manager.py", "Python", 40, 0, 0, 0, 0, 0, 0, 14, 54
+"/Users/darrellparkhouse/projects/python/library-management-system-python/db/lms.sql", "SQL", 0, 0, 0, 0, 0, 32, 0, 3, 35
+"/Users/darrellparkhouse/projects/python/library-management-system-python/models/admin_dao.py", "Python", 15, 0, 0, 0, 0, 0, 8, 3, 26
+"/Users/darrellparkhouse/projects/python/library-management-system-python/models/book_dao.py", "Python", 55, 0, 0, 0, 0, 0, 0, 22, 77
+"/Users/darrellparkhouse/projects/python/library-management-system-python/models/dao.py", "Python", 4, 0, 0, 0, 0, 0, 0, 1, 5
+"/Users/darrellparkhouse/projects/python/library-management-system-python/models/db.py", "Python", 24, 0, 0, 0, 0, 0, 1, 10, 35
+"/Users/darrellparkhouse/projects/python/library-management-system-python/models/db_dao.py", "Python", 11, 0, 0, 0, 0, 0, 0, 3, 14
+"/Users/darrellparkhouse/projects/python/library-management-system-python/models/user_dao.py", "Python", 39, 0, 0, 0, 0, 0, 31, 15, 85
+"/Users/darrellparkhouse/projects/python/library-management-system-python/requirements.txt", "pip requirements", 0, 0, 0, 0, 2, 0, 0, 1, 3
+"/Users/darrellparkhouse/projects/python/library-management-system-python/routes/admin.py", "Python", 47, 0, 0, 0, 0, 0, 0, 14, 61
+"/Users/darrellparkhouse/projects/python/library-management-system-python/routes/book.py", "Python", 54, 0, 0, 0, 0, 0, 0, 24, 78
+"/Users/darrellparkhouse/projects/python/library-management-system-python/routes/user.py", "Python", 67, 0, 0, 0, 0, 0, 0, 24, 91
+"/Users/darrellparkhouse/projects/python/library-management-system-python/static/css/app.css", "CSS", 0, 0, 0, 91, 0, 0, 1, 19, 111
+"/Users/darrellparkhouse/projects/python/library-management-system-python/templates/admin/books/add.html", "HTML", 0, 48, 0, 0, 0, 0, 0, 4, 52
+"/Users/darrellparkhouse/projects/python/library-management-system-python/templates/admin/books/book_view.html", "HTML", 0, 79, 0, 0, 0, 0, 0, 7, 86
+"/Users/darrellparkhouse/projects/python/library-management-system-python/templates/admin/books/edit.html", "HTML", 0, 52, 0, 0, 0, 0, 0, 4, 56
+"/Users/darrellparkhouse/projects/python/library-management-system-python/templates/admin/books/views.html", "HTML", 0, 52, 0, 0, 0, 0, 0, 4, 56
+"/Users/darrellparkhouse/projects/python/library-management-system-python/templates/admin/home.html", "HTML", 0, 22, 0, 0, 0, 0, 0, 3, 25
+"/Users/darrellparkhouse/projects/python/library-management-system-python/templates/admin/login.html", "HTML", 0, 34, 0, 0, 0, 0, 0, 3, 37
+"/Users/darrellparkhouse/projects/python/library-management-system-python/templates/admin/users.html", "HTML", 0, 36, 0, 0, 0, 0, 0, 0, 36
+"/Users/darrellparkhouse/projects/python/library-management-system-python/templates/book_view.html", "HTML", 0, 59, 0, 0, 0, 0, 0, 6, 65
+"/Users/darrellparkhouse/projects/python/library-management-system-python/templates/scss/app.scss", "SCSS", 0, 0, 91, 0, 0, 0, 1, 23, 115
+"/Users/darrellparkhouse/projects/python/library-management-system-python/templates/shared/admin_layout.html", "HTML", 0, 51, 0, 0, 0, 0, 2, 6, 59
+"/Users/darrellparkhouse/projects/python/library-management-system-python/templates/shared/layout.html", "HTML", 0, 45, 0, 0, 0, 0, 2, 6, 53
+"/Users/darrellparkhouse/projects/python/library-management-system-python/timeago.py", "Python", 0, 0, 0, 0, 0, 0, 0, 1, 1
+"/Users/darrellparkhouse/projects/python/library-management-system-python/util/scss_compile_notification.py", "Python", 35, 0, 0, 0, 0, 0, 0, 12, 47
+"/Users/darrellparkhouse/projects/python/library-management-system-python/util/time_ago.py", "Python", 60, 0, 0, 0, 0, 0, 0, 18, 78
+"Total", "-", 566, 478, 91, 91, 2, 32, 46, 289, 1595

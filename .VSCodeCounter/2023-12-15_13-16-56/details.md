@@ -1,10 +1,10 @@
 # Details
 
-Date : 2023-12-13 14:55:45
+Date : 2023-12-15 13:16:56
 
 Directory /Users/darrellparkhouse/projects/python/library-management-system-python
 
-Total : 20 files,  565 codes, 40 comments, 192 blanks, all 797 lines
+Total : 33 files,  1260 codes, 46 comments, 289 blanks, all 1595 lines
 
 [Summary](results.md) / Details / [Diff Summary](diff.md) / [Diff Details](diff-details.md)
 
@@ -29,7 +29,20 @@ Total : 20 files,  565 codes, 40 comments, 192 blanks, all 797 lines
 | [routes/admin.py](/routes/admin.py) | Python | 47 | 0 | 14 | 61 |
 | [routes/book.py](/routes/book.py) | Python | 54 | 0 | 24 | 78 |
 | [routes/user.py](/routes/user.py) | Python | 67 | 0 | 24 | 91 |
+| [static/css/app.css](/static/css/app.css) | CSS | 91 | 1 | 19 | 111 |
+| [templates/admin/books/add.html](/templates/admin/books/add.html) | HTML | 48 | 0 | 4 | 52 |
+| [templates/admin/books/book_view.html](/templates/admin/books/book_view.html) | HTML | 79 | 0 | 7 | 86 |
+| [templates/admin/books/edit.html](/templates/admin/books/edit.html) | HTML | 52 | 0 | 4 | 56 |
+| [templates/admin/books/views.html](/templates/admin/books/views.html) | HTML | 52 | 0 | 4 | 56 |
+| [templates/admin/home.html](/templates/admin/home.html) | HTML | 22 | 0 | 3 | 25 |
+| [templates/admin/login.html](/templates/admin/login.html) | HTML | 34 | 0 | 3 | 37 |
+| [templates/admin/users.html](/templates/admin/users.html) | HTML | 36 | 0 | 0 | 36 |
+| [templates/book_view.html](/templates/book_view.html) | HTML | 59 | 0 | 6 | 65 |
+| [templates/scss/app.scss](/templates/scss/app.scss) | SCSS | 91 | 1 | 23 | 115 |
+| [templates/shared/admin_layout.html](/templates/shared/admin_layout.html) | HTML | 51 | 2 | 6 | 59 |
+| [templates/shared/layout.html](/templates/shared/layout.html) | HTML | 45 | 2 | 6 | 53 |
 | [timeago.py](/timeago.py) | Python | 0 | 0 | 1 | 1 |
+| [util/scss_compile_notification.py](/util/scss_compile_notification.py) | Python | 35 | 0 | 12 | 47 |
 | [util/time_ago.py](/util/time_ago.py) | Python | 60 | 0 | 18 | 78 |
 
 [Summary](results.md) / Details / [Diff Summary](diff.md) / [Diff Details](diff-details.md)

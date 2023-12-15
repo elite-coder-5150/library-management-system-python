@@ -1,0 +1,7 @@
+"filename", "language", "HTML", "SCSS", "CSS", "comment", "blank", "total"
+"/Users/darrellparkhouse/projects/python/library-management-system-python/static/css/app.css", "CSS", 0, 0, 8, 0, 2, 10
+"/Users/darrellparkhouse/projects/python/library-management-system-python/templates/admin/login.html", "HTML", 27, 0, 0, 0, 0, 27
+"/Users/darrellparkhouse/projects/python/library-management-system-python/templates/admin/users.html", "HTML", 36, 0, 0, 0, 0, 36
+"/Users/darrellparkhouse/projects/python/library-management-system-python/templates/book_view.html", "HTML", 59, 0, 0, 0, 6, 65
+"/Users/darrellparkhouse/projects/python/library-management-system-python/templates/scss/app.scss", "SCSS", 0, 8, 0, 0, 2, 10
+"Total", "-", 122, 8, 8, 0, 10, 148
