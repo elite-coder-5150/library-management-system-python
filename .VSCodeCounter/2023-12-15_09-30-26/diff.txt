@@ -1,0 +1,38 @@
+Date : 2023-12-15 09:30:26
+Directory : /Users/darrellparkhouse/projects/python/library-management-system-python
+Total : 5 files,  176 codes, 1 comments, 28 blanks, all 205 lines
+
+Languages
++----------+------------+------------+------------+------------+------------+
+| language | files      | code       | comment    | blank      | total      |
++----------+------------+------------+------------+------------+------------+
+| CSS      |          1 |         83 |          1 |         17 |        101 |
+| HTML     |          3 |         81 |          0 |          9 |         90 |
+| SCSS     |          1 |         12 |          0 |          2 |         14 |
++----------+------------+------------+------------+------------+------------+
+
+Directories
++-----------------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| path                                                                                                      | files      | code       | comment    | blank      | total      |
++-----------------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| .                                                                                                         |          5 |        176 |          1 |         28 |        205 |
+| static                                                                                                    |          1 |         83 |          1 |         17 |        101 |
+| static/css                                                                                                |          1 |         83 |          1 |         17 |        101 |
+| templates                                                                                                 |          4 |         93 |          0 |         11 |        104 |
+| templates/admin                                                                                           |          3 |         81 |          0 |          9 |         90 |
+| templates/admin (Files)                                                                                   |          2 |         29 |          0 |          5 |         34 |
+| templates/admin/books                                                                                     |          1 |         52 |          0 |          4 |         56 |
+| templates/scss                                                                                            |          1 |         12 |          0 |          2 |         14 |
++-----------------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+
+Files
++-----------------------------------------------------------------------------------------------------------+----------+------------+------------+------------+------------+
+| filename                                                                                                  | language | code       | comment    | blank      | total      |
++-----------------------------------------------------------------------------------------------------------+----------+------------+------------+------------+------------+
+| /Users/darrellparkhouse/projects/python/library-management-system-python/static/css/app.css               | CSS      |         83 |          1 |         17 |        101 |
+| /Users/darrellparkhouse/projects/python/library-management-system-python/templates/admin/books/views.html | HTML     |         52 |          0 |          4 |         56 |
+| /Users/darrellparkhouse/projects/python/library-management-system-python/templates/admin/home.html        | HTML     |         22 |          0 |          2 |         24 |
+| /Users/darrellparkhouse/projects/python/library-management-system-python/templates/admin/login.html       | HTML     |          7 |          0 |          3 |         10 |
+| /Users/darrellparkhouse/projects/python/library-management-system-python/templates/scss/app.scss          | SCSS     |         12 |          0 |          2 |         14 |
+| Total                                                                                                     |          |        176 |          1 |         28 |        205 |
++-----------------------------------------------------------------------------------------------------------+----------+------------+------------+------------+------------+
