@@ -1,0 +1,100 @@
+.platforms {
+  font-size: 2.1em;
+}
+
+.bi-xbox {
+  color: #00ff00;
+}
+.bi-youtube {
+  color: #ff0000;
+}
+.bi-windows {
+  color: #2790b9;
+}
+.bi-github {
+  color: #000000;
+}
+.bi-book {
+  font-size: 6em;
+}
+
+.errpr {
+  margin-top: 21px;
+}
+
+.back {
+  font-size: 1.5em;
+  position: absolute;
+}
+
+.assigned {
+  margin-bottom: 5px;
+}
+
+.search-form-container {
+  width: 100%;
+  margin-top: 3em;
+  margin-bottom: 2em;
+}
+.search-form-container .input-container {
+  width: 90%;
+  display: inline-block;
+}
+.search-form-container .input-container input[type=search] {
+  border: 1px solid lightgray;
+}
+
+.btn-primary {
+  margin-left: 5px;
+}
+
+.bg-image {
+  height: 250px;
+  width: auto;
+  margin: 0 auto;
+  display: block;
+}
+
+.platform-title {
+  margin-bottom: 0;
+}
+
+.badge-warning {
+  margin-bottom: 5px;
+}
+
+.badge {
+  margin-bottom: 5px;
+}
+
+.owner {
+  padding-left: 0;
+}
+.owner img {
+  height: auto !important;
+  display: block;
+}
+
+label {
+  display: block;
+}
+
+/***** typography *****/
+.title {
+  margin-top: 32px;
+}
+
+.book-title {
+  margin-top: 32px;
+}
+
+h2 {
+  display: inline-block;
+}
+
+.welcome {
+  margin: 0 auto;
+}
+.welcome h1 {
+  font-size: 3.5em;
+}
