@@ -1,0 +1,37 @@
+{% extends "/shared/admin_layout.html" %}
+{% block title %} Admin Login {% endblock %}
+{% block head %}
+    {{ super() }}
+    <link rel="stylesheet" href="../../static/home.css" />
+{% endblock %}
+
+{% block content %}
+    <div class="container d-flex h-75">
+        <div class="row justify-content-center welcome">
+            <div class="col-md-12">
+                <h4>Admin login</h4>
+                {% if error %}
+                    <div class="alert alert-danger">
+                        {{ error }}
+                    </div>
+                {% endif %}
+                <form action="/admin/login" method="post">
+                    <div class="form-group">
+                        <label for="email">Email address</label>
+                        <input type="text" name="email" class="form-control" placeholder="Enter Email" aria-describedby="email" required>
+                        <small class="form-text text-muted">We'll never share your email with anyone.</small>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="password">Password</label>
+                        <input type="password" name="password" class="form-control" placeholder="Password" id="password">
+                    </div>
+                    <button type="submit" class="btn btn-primary">
+                        Login
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+                
+{% endblock %}
