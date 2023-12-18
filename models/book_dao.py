@@ -5,7 +5,12 @@ class BookDao():
         self.db.table = "books"
         
     def delete(self, id):
-        q = self.db.query("delete from @table where id={}".format(id))
+        sql = """
+            -- begin-sql
+            delete from @table where id={}
+            -- end-sql
+        """
+        q = self.db.query("".format(id))
         self.db.commit()
         
         return q;
@@ -13,16 +18,30 @@ class BookDao():
     def reserve(self, user_id, book_id):
         if not self.availability(book_id):
             return "err_out"
+        sql = """
+         --begin-sql
+            insert into reserve (user_id, book_id) values('{}', '{}')
+         --end-sql
+        """
+        q = self.db.query(sql.format(user_id, book_id))
         
-        q = self.db.query("insert into reserve (user_id, book_id) values('{}', '{})".format(user_id, book_id))
-        
-        self.db.query("update reserve set count=count - 1 where id={}".format(book_id))
+        update_sql ="""
+         --begin-sql
+            update reserve set count=count - 1 where id={}
+         --end-sql
+        """
+        self.db.query(update_sql.format(book_id))
         self.db.commit()
         
         return q
     
     def getBooksByUser(self, user_id):
-        q = self.db.query("select * from @table left join reserve on reserve.book_id = @table.id where reserve.user_id={}".format(user_id))
+        sql ="""
+         --begin-sql
+            select * from @table left join reserve on reserve.book_id = @table.book_id where reserve.user_id = {}
+         --end-sql
+        """
+        q = self.db.query(sql.format(user_id))
         
         books = q.fetchall()
         print(books)
@@ -30,48 +49,86 @@ class BookDao():
         return q
     
     def get_books_count_by_user(self, user_id):
-        q = self.db.query("select count(reserve.book_id) as book_count from @table left join reserve on reserve.book_id = @table.id where reserve.user_id={}".format(user_id))
+        sql ="""
+         --begin-sql
+            select counr(reserve.book_id) as book_count from @table left join reserve.book on reserve.book.book_id = @table.book_id where reserved.book_id={}
+         --end-sql
+        """
+        q = self.db.query(sql.format(user_id))
         books = q.fetchall()
         print(books)
         return books
     
     def get_books(self, id):
-        q = self.db.query("select * from @table where id={}".format(id))
+        sql = """
+        --begin-sql
+            select * from @table where id={}
+        --end-sql
+        """
+        q = self.db.query(sql.format(id))
         book = q.fetchone()
         print(book)
         return book
     
     def available(self, id):
-        book = self.get_by_id(id)
+        sql ="""
+         --begin-sql
+            select availability from @table where availability <= 1 and id={}
+         --end-sql
+        """
+        q = self.db.query(sql.format('availability', id))
+        book = q.fetchall()
+        return book
         
     def get_by_id(self, id):
-        q = self.db.query("select * from @table where id={}".format(id))
+        sql ="""
+         --begin-sql
+            select * from @table where id={}
+         --end-sql
+        """
+        q = self.db.query(sql.format(id))
         book = q.fetchone()
         return book
     
     def _list(self, availability = 1):
         query =  "select* from @table"
-        if availability == 1:
-            query = query + " where availability={}".format(availability)
+        sql ="""
+         --begin-sql
+            select * from @table where availability > 0
+         --end-sql
+        """
+        q = self.db.query(sql.format(availability))
             
-        books = self.db.query(query)
-        books = books.fetchall()
-        
+        books = q.fetchall()
         return books
     
     def get_reserved_books_by_user(self, user_id):
-        query = "select concat(book_id, ',') as user_books from reserve where user_id={}".format(user_id)
-        books = self.db.query(query)
+        sql ="""
+         --begin-sql
+            select concat(book_id, ',') as user_books from reserve where user_id = {}
+         --end-sql
+        """
+        
+        books = self.db.query(sql.format(user_id))
         books = books.fetchall()
         return books
     
     def search_books(self, name, availability=1):
         query = "select * form @table where name LIKE '%{}%'".format(name)
-        
+        sql ="""
+         --begin-sql
+            select * from @table where name like '%{}%'
+        --end-sql
+        """
         if availability == 1:
-            query + " and availability={}".format(availability)
+            sql += """
+                --begin-sql
+                    and availibility = {}
+                --end-sql
+            """
+            query + " and availability={}".format(name, availability)
             
-        q = self.db.query(query)
+        q = self.db.query(sql.format(availability=availability, name=name))
         books = q.fetchall()
         
         return books
