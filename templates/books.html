@@ -35,7 +35,37 @@
                 {% if search %}
                     <h4>Search Found ({{ count}}) </h4>
                 {% endif %}
-                {% %}
+                {% for book in books %}
+                    <div class="card book">
+                        <img src"../../static/img/bg.jpg" class="card-img-top" alt="{{ book[1] }}">
+                        <div class="card-body">
+                            <h5 class="card-title">
+                                <a href="/books/{{ book['id'] }}">{{ book['name'] }}</a>
+                            </h5>
+
+                            {% if book['availibility'] < 1 %}
+                                <span class="badge badge-warning">Assigned</span>
+                            {% endif %}
+                            <p class="card-text book-desc">{{ book['desc'] }}</p>
+                            <p class="card-text">
+                                <span class="badge badge-{{'primary' if book['count'] > 0 else 'secondary' ]}}">
+                                    {% if book['count'] > 0 %}
+                                        Boooks left: {{ book['count'] }}
+                                    {% else %}
+                                        All gone
+                                    {% endif %}
+                                </span>
+                            </p>
+                            {% if book['count'] > 0 %}
+                                <a href="/books/add/{book['id']}" {{ 'disabled' if user_books!=None and str(book['id']) in user_books else '' }} class="btn btn-outline-warning" target="_blank"><i class="bi bi-journal-plus"></i> {{ 'added' if str(book['id']) in user_books else 'add' }} </a>
+                            {% endif %}
+                        </div>
+                    </div>
+                {% endfor %}
+            {% else %}
+                    <h4>No books found</h4>
+                    <p>Please contact a librarian.</p>
             {% endif %}
         </div>
     </div>
+{% endblock %}
