@@ -1,0 +1,41 @@
+{% extends "/shared/layout.html" %}
+{% block title  %}Books{% endblock %}
+
+{%block head %}
+    {{ super() }}
+    <link rel="stylesheet" href="../../static/home.css">
+{% endblock %}
+
+{% block content %}
+    <div class="container h-75">
+        <div class="col-md-12 mt-3">
+            {% if msg %}
+                <div class="alert alert-success">
+                    {{ msg }}
+                </div>
+            {% endif %}
+            <form action="/books/search" method="GET" class="search-form">
+                <div class="form-group">
+                    <div class="input-container">
+                        <input 
+                            type="search" 
+                            class="form-control" 
+                            placeholder="Search for books..." 
+                            autocomplete="on" 
+                            autofocus 
+                            aria-describedby="emailHelp" 
+                            value="{{ keyword }}" />
+                    </div>
+                    <button type="submit" class="btn btn-primary">Search</button>
+                </div>
+            </form>
+        </div>
+        <div class="col-md-12 mt-3">
+            {% if books %}
+                {% if search %}
+                    <h4>Search Found ({{ count}}) </h4>
+                {% endif %}
+                {% %}
+            {% endif %}
+        </div>
+    </div>
